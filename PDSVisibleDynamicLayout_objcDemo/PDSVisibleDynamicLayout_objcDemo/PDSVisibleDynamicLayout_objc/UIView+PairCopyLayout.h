@@ -10,4 +10,12 @@
 
 @interface UIView (PairCopyLayout)
 
+- (NSArray *)pairCopyArray1:(NSArray *)array1
+                     Array2:(NSArray *)array2;
+
+- (NSArray *)copyFromView:(UIView *)view1
+                   ToView:(UIView *)view2
+                   array1:(NSArray *)array1
+                   array2:(NSArray *)array2;
+
 @end
