@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BlackRedView.h"
 
 @interface ViewController : UIViewController
+{
+    IBOutlet BlackRedView *view1;
+}
 
 @end

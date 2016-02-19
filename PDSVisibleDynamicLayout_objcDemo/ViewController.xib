@@ -8,13 +8,46 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view1" destination="G7p-b4-hbR" id="fb0-QW-FwV"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G7p-b4-hbR" customClass="BlackRedView">
+                    <rect key="frame" x="10" y="50" width="300" height="300"/>
+                    <color key="backgroundColor" red="1" green="0.54602692379999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="MK7-Da-Bu4"/>
+                        <constraint firstAttribute="width" constant="300" id="cYq-8h-L0K"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gac-lW-vpZ">
+                    <rect key="frame" x="103" y="514" width="55" height="30"/>
+                    <state key="normal" title="Button2"/>
+                    <connections>
+                        <action selector="change2:" destination="-1" eventType="touchUpInside" id="nsL-1a-45B"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HB-s8-1vt">
+                    <rect key="frame" x="20" y="514" width="52" height="30"/>
+                    <state key="normal" title="Button1"/>
+                    <connections>
+                        <action selector="change:" destination="-1" eventType="touchUpInside" id="6bK-Tn-h8W"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="0.3411764706" green="0.80000000000000004" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="G7p-b4-hbR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="3Bk-og-5S6"/>
+                <constraint firstItem="8HB-s8-1vt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="4Jt-GO-sBP"/>
+                <constraint firstItem="gac-lW-vpZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="103" id="F0N-HL-n8L"/>
+                <constraint firstAttribute="bottom" secondItem="8HB-s8-1vt" secondAttribute="bottom" constant="24" id="RiI-VX-dd5"/>
+                <constraint firstAttribute="bottom" secondItem="gac-lW-vpZ" secondAttribute="bottom" constant="24" id="Z2F-zo-gGS"/>
+                <constraint firstItem="G7p-b4-hbR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uVd-Gr-ebG"/>
+            </constraints>
             <point key="canvasLocation" x="254" y="460"/>
         </view>
     </objects>
