@@ -6,16 +6,16 @@
 //  Copyright © 2016年 w91379137. All rights reserved.
 //
 
-#import "IBDesignableView.h"
+#import "PDSDynamicView.h"
 
-typedef NS_ENUM(NSUInteger, IBDesignableViewLayout) {
-    IBDesignableViewLayoutInit,
-    IBDesignableViewLayout2
+typedef NS_ENUM(NSUInteger, BlackRedViewLayout) {
+    BlackRedViewLayoutInit,
+    BlackRedViewLayoutOther
 };
 
-@interface BlackRedView : IBDesignableView
+@interface BlackRedView : PDSDynamicView
 
-@property (nonatomic) IBDesignableViewLayout layout;
+@property (nonatomic) BlackRedViewLayout layout;
 @property (nonatomic, strong) IBOutlet UIView *blackView;
 @property (nonatomic, strong) IBOutlet UIView *redView;
 

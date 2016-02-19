@@ -7,78 +7,59 @@
 //
 
 #import "BlackRedView.h"
-#import "UIView+PairCopyLayout.h"
-
-@interface BlackRedView()
-{
-    NSMutableArray *currentConstraints;
-}
-
-@end
-
+#import "UIView+PDSDynamicView.h"
 
 @implementation BlackRedView
 
 -(void)dataSetup
 {
     [super dataSetup];
-    _layout = IBDesignableViewLayoutInit;
+    _layout = BlackRedViewLayoutInit;
 }
 
-- (void)setLayout:(IBDesignableViewLayout)layout
+- (void)setLayout:(BlackRedViewLayout)layout
 {
     if (_layout == layout) {
         return;
     }
     _layout = layout;
     
-    if (currentConstraints != nil) {
-        for (id obj in currentConstraints)
-        {
-            if([obj isKindOfClass:MASConstraint.class]) {
-                [(MASConstraint *)obj uninstall];
-            }
-            else if([obj isKindOfClass:NSArray.class]) {
-                for (MASConstraint * constraint in (NSArray *)obj)
-                {
-                    [constraint uninstall];
-                }
-            }
-        }
-    }
-    
-    if (currentConstraints == nil) {
+    if (!currentConstraints) {
         currentConstraints = [NSMutableArray array];
     }
+    [self update:currentConstraints isInstall:NO];
     
     NSString *xibName = nil;
     
     switch (_layout) {
-        case IBDesignableViewLayoutInit:break;
-        case IBDesignableViewLayout2:
-            xibName = @"BlackRedView2";
-            break;
+        case BlackRedViewLayoutInit:break;
+        case BlackRedViewLayoutOther: xibName = @"BlackRedView2"; break;
         default:break;
     }
     
     if (xibName) {
-        BlackRedView *otherOne =
-        [[BlackRedView alloc] initWithFrame:CGRectZero XibName:xibName];
-        
-        NSArray *sourceViews =
-        @[otherOne.mainContainerView,
-          otherOne.blackView,
-          otherOne.redView];
-        
-        NSArray *inputViews =
-        @[self.mainContainerView,
-          self.blackView,
-          self.redView];
-        
-        [currentConstraints addObjectsFromArray:[self pairCopyArray1:sourceViews Array2:inputViews]];
+        [currentConstraints addObjectsFromArray:[self constraintsOfXibName:xibName]];
     }
     
     [self layoutIfNeeded];
+}
+
+- (NSArray *)createConstraintsOfXibName:(NSString *)xibName
+{
+    BlackRedView *otherOne =
+    [[BlackRedView alloc] initWithFrame:CGRectZero XibName:xibName];
+    
+    NSArray *sourceViews =
+    @[otherOne.mainContainerView,
+      otherOne.blackView,
+      otherOne.redView];
+    
+    NSArray *inputViews =
+    @[self.mainContainerView,
+      self.blackView,
+      self.redView];
+    
+    return [self pairCopyArray1:sourceViews Array2:inputViews];
 }
 
 @end

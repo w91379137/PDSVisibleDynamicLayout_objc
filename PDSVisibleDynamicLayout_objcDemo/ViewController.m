@@ -18,14 +18,14 @@
 - (IBAction)change:(id)sender
 {
     [self animate:^{
-        view1.layout = IBDesignableViewLayoutInit;
+        view1.layout = BlackRedViewLayoutInit;
     }];
 }
 
 - (IBAction)change2:(id)sender
 {
     [self animate:^{
-        view1.layout = IBDesignableViewLayout2;
+        view1.layout = BlackRedViewLayoutOther;
     }];
 }
 

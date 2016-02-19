@@ -14,11 +14,12 @@
 		F86B03591C7710FC00EFECA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86B03571C7710FC00EFECA1 /* LaunchScreen.storyboard */; };
 		F86B03631C77111E00EFECA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F86B03611C77111E00EFECA1 /* ViewController.m */; };
 		F86B03641C77111E00EFECA1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F86B03621C77111E00EFECA1 /* ViewController.xib */; };
-		F86B03681C7713B100EFECA1 /* UIView+PairCopyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F86B03671C7713B100EFECA1 /* UIView+PairCopyLayout.m */; };
-		F8DBB47A1C7725FF005BDE1D /* IBDesignableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DBB4771C7725FF005BDE1D /* IBDesignableView.m */; };
+		F86B03681C7713B100EFECA1 /* UIView+PDSDynamicView.m in Sources */ = {isa = PBXBuildFile; fileRef = F86B03671C7713B100EFECA1 /* UIView+PDSDynamicView.m */; };
 		F8DBB47B1C7725FF005BDE1D /* BlackRedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8DBB4781C7725FF005BDE1D /* BlackRedView.xib */; };
 		F8DBB47C1C7725FF005BDE1D /* BlackRedView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8DBB4791C7725FF005BDE1D /* BlackRedView2.xib */; };
 		F8DBB47F1C772624005BDE1D /* BlackRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DBB47E1C772624005BDE1D /* BlackRedView.m */; };
+		F8DBB4871C7731F3005BDE1D /* PDSDynamicView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DBB4841C7731F3005BDE1D /* PDSDynamicView.m */; };
+		F8DBB4881C7731F3005BDE1D /* PDSIBDesignableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DBB4861C7731F3005BDE1D /* PDSIBDesignableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,14 +36,16 @@
 		F86B03601C77111E00EFECA1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F86B03611C77111E00EFECA1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F86B03621C77111E00EFECA1 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
-		F86B03661C7713B100EFECA1 /* UIView+PairCopyLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PairCopyLayout.h"; sourceTree = "<group>"; };
-		F86B03671C7713B100EFECA1 /* UIView+PairCopyLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PairCopyLayout.m"; sourceTree = "<group>"; };
-		F8DBB4761C7725FF005BDE1D /* IBDesignableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBDesignableView.h; sourceTree = "<group>"; };
-		F8DBB4771C7725FF005BDE1D /* IBDesignableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBDesignableView.m; sourceTree = "<group>"; };
+		F86B03661C7713B100EFECA1 /* UIView+PDSDynamicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PDSDynamicView.h"; sourceTree = "<group>"; };
+		F86B03671C7713B100EFECA1 /* UIView+PDSDynamicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PDSDynamicView.m"; sourceTree = "<group>"; };
 		F8DBB4781C7725FF005BDE1D /* BlackRedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlackRedView.xib; sourceTree = "<group>"; };
 		F8DBB4791C7725FF005BDE1D /* BlackRedView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlackRedView2.xib; sourceTree = "<group>"; };
 		F8DBB47D1C772624005BDE1D /* BlackRedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackRedView.h; sourceTree = "<group>"; };
 		F8DBB47E1C772624005BDE1D /* BlackRedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackRedView.m; sourceTree = "<group>"; };
+		F8DBB4831C7731F3005BDE1D /* PDSDynamicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDSDynamicView.h; sourceTree = "<group>"; };
+		F8DBB4841C7731F3005BDE1D /* PDSDynamicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDSDynamicView.m; sourceTree = "<group>"; };
+		F8DBB4851C7731F3005BDE1D /* PDSIBDesignableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDSIBDesignableView.h; sourceTree = "<group>"; };
+		F8DBB4861C7731F3005BDE1D /* PDSIBDesignableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDSIBDesignableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +124,12 @@
 		F86B03651C77138F00EFECA1 /* PDSVisibleDynamicLayout_objc */ = {
 			isa = PBXGroup;
 			children = (
-				F86B03661C7713B100EFECA1 /* UIView+PairCopyLayout.h */,
-				F86B03671C7713B100EFECA1 /* UIView+PairCopyLayout.m */,
+				F8DBB4851C7731F3005BDE1D /* PDSIBDesignableView.h */,
+				F8DBB4861C7731F3005BDE1D /* PDSIBDesignableView.m */,
+				F8DBB4831C7731F3005BDE1D /* PDSDynamicView.h */,
+				F8DBB4841C7731F3005BDE1D /* PDSDynamicView.m */,
+				F86B03661C7713B100EFECA1 /* UIView+PDSDynamicView.h */,
+				F86B03671C7713B100EFECA1 /* UIView+PDSDynamicView.m */,
 			);
 			path = PDSVisibleDynamicLayout_objc;
 			sourceTree = "<group>";
@@ -130,8 +137,6 @@
 		F8DBB4751C7725ED005BDE1D /* DemoClass */ = {
 			isa = PBXGroup;
 			children = (
-				F8DBB4761C7725FF005BDE1D /* IBDesignableView.h */,
-				F8DBB4771C7725FF005BDE1D /* IBDesignableView.m */,
 				F8DBB47D1C772624005BDE1D /* BlackRedView.h */,
 				F8DBB47E1C772624005BDE1D /* BlackRedView.m */,
 				F8DBB4781C7725FF005BDE1D /* BlackRedView.xib */,
@@ -265,10 +270,11 @@
 			files = (
 				F8DBB47F1C772624005BDE1D /* BlackRedView.m in Sources */,
 				F86B03631C77111E00EFECA1 /* ViewController.m in Sources */,
+				F8DBB4871C7731F3005BDE1D /* PDSDynamicView.m in Sources */,
 				F86B034E1C7710FC00EFECA1 /* AppDelegate.m in Sources */,
-				F8DBB47A1C7725FF005BDE1D /* IBDesignableView.m in Sources */,
 				F86B034B1C7710FC00EFECA1 /* main.m in Sources */,
-				F86B03681C7713B100EFECA1 /* UIView+PairCopyLayout.m in Sources */,
+				F86B03681C7713B100EFECA1 /* UIView+PDSDynamicView.m in Sources */,
+				F8DBB4881C7731F3005BDE1D /* PDSIBDesignableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

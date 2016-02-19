@@ -1,5 +1,5 @@
 //
-//  UIView+PairCopyLayout.h
+//  UIView+PDSDynamicView.h
 //  PDSVisibleDynamicLayout_objcDemo
 //
 //  Created by w91379137 on 2016/2/19.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (PairCopyLayout)
+@interface UIView (PDSDynamicView)
 
 - (NSArray *)pairCopyArray1:(NSArray *)array1
                      Array2:(NSArray *)array2;

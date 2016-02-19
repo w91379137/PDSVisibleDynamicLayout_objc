@@ -6,10 +6,10 @@
 //  Copyright © 2016年 w91379137. All rights reserved.
 //
 
-#import "UIView+PairCopyLayout.h"
+#import "UIView+PDSDynamicView.h"
 #import "Masonry.h"
 
-@implementation UIView (PairCopyLayout)
+@implementation UIView (PDSDynamicView)
 
 - (NSArray *)pairCopyArray1:(NSArray *)array1 Array2:(NSArray *)array2
 {

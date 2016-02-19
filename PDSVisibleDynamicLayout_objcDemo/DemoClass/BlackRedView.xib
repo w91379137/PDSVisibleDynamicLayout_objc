@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9531"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -25,16 +25,25 @@
                     <rect key="frame" x="200" y="200" width="200" height="200"/>
                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9v-Vq-LOl">
+                    <rect key="frame" x="0.0" y="182" width="400" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.34114767759999998" green="0.20228882279999999" blue="0.85129213329999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="y9v-Vq-LOl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="APu-ii-53z"/>
                 <constraint firstItem="fPb-4K-Qm3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" priority="500" id="BJt-Gh-FIR"/>
+                <constraint firstAttribute="trailing" secondItem="y9v-Vq-LOl" secondAttribute="trailing" id="O2y-bj-Btw"/>
                 <constraint firstAttribute="centerY" secondItem="fPb-4K-Qm3" secondAttribute="bottom" priority="500" id="Ojr-hu-HWa"/>
                 <constraint firstItem="7qp-Rm-UBw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="centerY" priority="500" id="P0D-mU-Ys1"/>
                 <constraint firstAttribute="trailing" secondItem="7qp-Rm-UBw" secondAttribute="trailing" priority="500" id="PS3-Qg-bCE"/>
                 <constraint firstAttribute="centerX" secondItem="fPb-4K-Qm3" secondAttribute="trailing" priority="500" id="hI0-5H-4NP"/>
                 <constraint firstItem="fPb-4K-Qm3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" priority="500" id="k0r-n4-uKu"/>
                 <constraint firstItem="7qp-Rm-UBw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="centerX" priority="500" id="oA1-EY-Ddf"/>
+                <constraint firstItem="y9v-Vq-LOl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="oo4-b6-8tK"/>
                 <constraint firstAttribute="bottom" secondItem="7qp-Rm-UBw" secondAttribute="bottom" priority="500" id="yC2-Fs-3uf"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
