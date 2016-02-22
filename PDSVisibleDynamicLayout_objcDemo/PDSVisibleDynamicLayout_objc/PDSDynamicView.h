@@ -15,7 +15,7 @@
 }
 
 - (void)update:(NSArray *)constraints isInstall:(BOOL)isInstall;
-- (NSArray *)constraintsOfXibName:(NSString *)xibName;
-- (NSArray *)createConstraintsOfXibName:(NSString *)xibName;
+- (NSArray *)constraintsOfKey:(NSString *)key;
+- (NSArray *)createConstraintsOfKey:(NSString *)key;
 
 @end

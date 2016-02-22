@@ -38,25 +38,25 @@
     }
 }
 
-- (NSArray *)constraintsOfXibName:(NSString *)xibName
+- (NSArray *)constraintsOfKey:(NSString *)key
 {
     if (!cacheConstraints) {
         cacheConstraints = [NSMutableDictionary dictionary];
     }
     
-    if ([cacheConstraints.allKeys containsObject:xibName]) {
-        NSArray *cache = cacheConstraints[xibName];
+    if ([cacheConstraints.allKeys containsObject:key]) {
+        NSArray *cache = cacheConstraints[key];
         [self update:currentConstraints isInstall:YES];
         return cache;
     }
     else {
-        NSArray *create = [self createConstraintsOfXibName:xibName];
-        if (create) cacheConstraints[xibName] = create;
+        NSArray *create = [self createConstraintsOfKey:key];
+        if (create) cacheConstraints[key] = create;
         return create;
     }
 }
 
-- (NSArray *)createConstraintsOfXibName:(NSString *)xibName
+- (NSArray *)createConstraintsOfKey:(NSString *)key
 {
     return nil;
 }

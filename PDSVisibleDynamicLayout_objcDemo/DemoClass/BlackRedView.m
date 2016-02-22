@@ -11,12 +11,6 @@
 
 @implementation BlackRedView
 
--(void)dataSetup
-{
-    [super dataSetup];
-    _layout = BlackRedViewLayoutInit;
-}
-
 - (void)setLayout:(BlackRedViewLayout)layout
 {
     if (_layout == layout) {
@@ -29,25 +23,25 @@
     }
     [self update:currentConstraints isInstall:NO];
     
-    NSString *xibName = nil;
+    NSString *key = nil;
     
     switch (_layout) {
         case BlackRedViewLayoutInit:break;
-        case BlackRedViewLayoutOther: xibName = @"BlackRedView2"; break;
+        case BlackRedViewLayoutOther: key = @"BlackRedView2"; break;
         default:break;
     }
     
-    if (xibName) {
-        [currentConstraints addObjectsFromArray:[self constraintsOfXibName:xibName]];
+    if (key) {
+        [currentConstraints addObjectsFromArray:[self constraintsOfKey:key]];
     }
     
     [self layoutIfNeeded];
 }
 
-- (NSArray *)createConstraintsOfXibName:(NSString *)xibName
+- (NSArray *)createConstraintsOfKey:(NSString *)key
 {
     BlackRedView *otherOne =
-    [[BlackRedView alloc] initWithFrame:CGRectZero XibName:xibName];
+    [[BlackRedView alloc] initWithFrame:CGRectZero XibName:key];
     
     NSArray *sourceViews =
     @[otherOne.mainContainerView,
